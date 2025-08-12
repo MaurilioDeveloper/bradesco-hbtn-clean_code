@@ -21,8 +21,8 @@ public class Name {
     public URL url;
 
     // Classe possui nomes próprios, funções devem ter verbos
-    //B (classe correta) + A (método correto)
-    public class TableRepresenter{};
+    //A (classe correta) + A (método correto)
+    public class TableRepresent{};
     public void saveCar(){};
 
     // Uma palavra por conceito
