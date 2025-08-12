@@ -1,44 +1,41 @@
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 public class Name {
-
-    // variáveis que falam por si só  ✅
+    //variáveis que falam por si só 
+    //A (correta)
     public Date modifiedDate;
-    public List<Testcase> findAllTestcasesByUser(Name.User user) {
-        return new ArrayList<>();
-    }
+    public List<Testcase> findAllTestcasesByUser(Name.User user){};
 
-    // Declarações corretas (preferir coleções a arrays)  ✅
+    //Declarações corretas
+    //A (correta)
     public List<Account> AccountList;
 
-    // Sem Prefixos (nomes de parâmetros claros, sem "pUser")  ✅
-    public void deleteUser(Name.User user) {
-        // implementação de exemplo
-    }
+    // Sem Prefixos
+    //B (correta)
+    public void deleteUser(Name.User user){};
 
-    // Evite mapa mental (nomes autoexplicativos)  ✅
+    // Evite mapa mental    
+    //B (correta)
     public URL url;
 
-    // Classe possui nomes próprios; funções com verbos  ✅
-    public static class TableRepresent { }
-    public void saveCar() {
-        // implementação de exemplo
-    }
+    // Classe possui nomes próprios, funções devem ter verbos
+    //B (classe correta) + A (método correto)
+    public class TableRepresenter{};
+    public void saveCar(){};
 
-    // Uma palavra por conceito (consistência semântica)  ✅
-    public void saveUser() { }
-    public void saveAccount() { }
-    public void saveContract() { }
+    // Uma palavra por conceito
+    //A (correta)
+    public void saveUser(){}; public void saveAccount(){}; public void saveContract(){};
 
-    // Use constants/enums em vez de magic numbers/abreviações  ✅
-    public static final int DAYS_IN_YEAR = 360;
-    public static final int HOURS_IN_WEEK = 168;
+    //Use constants, enums instead of magic numbers, abbreviations
+    //B (correta)
+    public final int DAYS_IN_YEAR = 360;
+    public final int HOURS_IN_WEEK = 168;
 
-    // --- Tipos auxiliares para compilar o exemplo ---
-    public static class User { }
-    public static class Account { }
-    public static class Testcase { }
+    // Tipos auxiliares mínimos para referência
+    public static class Testcase {}
+    public static class Account {}
+    public static class User {}
 }
